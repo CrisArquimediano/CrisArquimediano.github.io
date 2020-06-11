@@ -11,17 +11,36 @@
             table {
                 background-color: rgb(255, 255, 255);
                 color: rgb(0, 180, 245);
-                font-family: serif;
-            
+                margin-left: 500px;
+                border: 5px outset blue;
+                padding: 5px; 
+                
             }
             h1 {
                 background-color: rgb(0, 0, 0);
                 color: rgb(240, 240, 240);
+                text-align: center;
+                margin: 20px 490px 50px 500px;
+                border: 2px hidden red;
+                padding: 5px;
+            }
+            #menu {
+                margin: 50px 250px 0px 250px;
+                border: 5px inset pink;
+                
+                
+            }
+            #info {
+                background-color:rgb(87, 235, 199);
+                margin-top: 50px;
+                border: 4px inset black;
+                padding: 10px;
             }
             h3 {
                 color: rgb(0, 149, 194);
             }
             h2 {
+                margin-right: 1050px;
                 background-color: rgb(0, 0, 0);
                 color: rgb(240, 240, 240);
             }
@@ -30,8 +49,8 @@
                 color: rgb(219, 0, 230);
             }
             p {
-                background-color: rgb(255, 178,255);
-                color:rgb(212, 0, 212);
+                background-color: floralwhite;
+                color:rgb(0, 140, 245);
                 font-family: cursive;
                 line-height: 1.6em;
             } 
@@ -46,7 +65,12 @@
             .i {
                 text-align: center;
             }
-            
+            #río {
+                border: 5px ridge grey;
+            }
+            #caligrafía {
+                border: 5px groove grey;
+            }
         </style>
         
     </head>
@@ -91,7 +115,7 @@
 
       <!--Aquí comienza el especie de menú -->
       
-      <h3 id="que-hay" class="q">¿Qué hay?</h3>
+     <div id="menu"> <h3 id="que-hay" class="q">¿Qué hay?</h3>
         
         <p class="q"> <a href="#first">Todo comienzo</a></p>
         <p class="q"><a href="#second">Lo que sigue</a></p>
@@ -108,10 +132,12 @@
         <p class="i"><a href="#ver">Veamos</a></p>
         <p class="i"><a href="#común">Común</a></p>
         <p class="i"><a href="#raro">Raro</a></p>
-        
+        </div>
     <!--Y aquí termina ese especie de menú -->
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Parana_atardecer.JPG/250px-Parana_atardecer.JPG" alt="Río Paraná" height="200">
+        <div id="info">
+            
+        <img id="río" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Parana_atardecer.JPG/250px-Parana_atardecer.JPG" alt="Río Paraná" height="200">
         
         <!-- Comienza el blog, primera entrada-->
         
@@ -127,7 +153,7 @@
         <h2 id="third">Andando</h2>
         <h6>En el presente, mientras lees</h6>
         
-        <p>Sanar y fortalecerse, conceptos clave. No ignorar las injusticias sobre las que se construyó nuestro presente. Tampoco aquellas que se perpetuan en el ahora. Salir de la burbuja, empatizar. Reconocer los errores, pero no sólo eso, remendarlos en lo posible. Intertar comprender antes de juzgar y gritar lo que el sentido común nos dicta. Escuchar las voces de quienes viven de primera mano ciertas experiencias. Nunca se podrá saber lo que es estar en la piel de le oprimide, violentade, reprimide, pero sí se podrá saber cómo suenan sus vivencias, dándoles lugar para expresarse.</p>
+        <p>Sanar y fortalecerse, conceptos clave. No ignorar las injusticias sobre las que se construyó nuestro presente. Tampoco aquellas que se perpetuan en el ahora. Salir de la burbuja, empatizar. Reconocer los errores, pero no sólo eso, remendarlos en lo posible. Intentar comprender antes de juzgar y gritar lo que el sentido común nos dicta. Escuchar las voces de quienes viven de primera mano ciertas experiencias. Nunca se podrá saber lo que es estar en la piel de le oprimide, violentade, reprimide, pero sí se podrá saber cómo suenan sus vivencias, dándoles lugar para expresarse.</p>
     
         
         
@@ -145,7 +171,7 @@
         <h2 id="compartir">Compartamos</h2>
         <p>Una vez tenemos un séquito de objetos, asuntos, tópicos, etc. que nos guste, es hora de compartir. A veces para retribuir el favor que nos hicieron antes aquellxs que comparten, otras para aumentar aun más la diversión y lo interesante.</p>
         
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Japanese_calligraphy.jpg/160px-Japanese_calligraphy.jpg" alt="caligrafía japonesa" width="200">    
+    <img id="caligrafía" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Japanese_calligraphy.jpg/160px-Japanese_calligraphy.jpg" alt="caligrafía japonesa" width="200">    
         
            
     <!-- Comienza la tercera entrada -->
@@ -157,7 +183,7 @@
         <p>No hay que negar si lo que nos parece interesante es común. Lo común sirve para caer bien a la gente. Tener cosas en común con otra persona te hace ganarte su simpatía. Podés conocer algo por arriba para utilizar ese conocimiento superficial en situaciones que lo requieran. Finge que eres humano, John von Neumann, o te descubrirán.</p>
         
         <h2 id="raro">Raro</h2>
-        <p>Lo que es raro lo es para quienes no comparten el gusto por eso "raro" y no lo es para quienes sí. No te podría decir que el gusto por programar es raro, porque de seguro no te lo parece. Pero salís al mundo, y encontrás que sí es raro. Que las matemáticas no son raras(¡joder!(?)), pero grita que te gustan como quien gritaría que le gusta el fútbol, y ya serás el nerd rarito. Es absurdo, pero así es. Nuestro deber es cambiarlo un poco, en lo posible. Le hará muy a la gente, en más de un sentido.</p>
-        
+        <p>Lo que es raro lo es para quienes no comparten el gusto por eso "raro" y no lo es para quienes sí. No te podría decir que el gusto por programar es raro, porque de seguro no te lo parece. Pero salís al mundo, y encontrás que sí es raro. Que las matemáticas no son rara, pero grita que te gustan como quien gritaría que le gusta el fútbol, y ya serás el nerd rarito. Es absurdo, pero así es. Nuestro deber es cambiarlo un poco, en lo posible. Le hará muy a la gente, en más de un sentido.</p>
+        </div>
     </body>
 </html>
