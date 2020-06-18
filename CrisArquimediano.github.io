@@ -11,7 +11,7 @@
             table {
                 background-color: rgb(255, 255, 255);
                 color: rgb(0, 180, 245);
-                margin-left: 500px;
+                margin-left: 40%;
                 border: 5px outset blue;
                 padding: 5px; 
                 
@@ -20,7 +20,7 @@
                 background-color: rgb(0, 0, 0);
                 color: rgb(240, 240, 240);
                 text-align: center;
-                margin: 20px 490px 50px 500px;
+                margin: 20px 40% 50px 40%;
                 border: 2px hidden red;
                 padding: 5px;
             }
@@ -40,7 +40,7 @@
                 color: rgb(0, 149, 194);
             }
             h2 {
-                margin-right: 1050px;
+                margin-right: 85%;
                 background-color: rgb(0, 0, 0);
                 color: rgb(240, 240, 240);
             }
