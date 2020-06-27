@@ -99,9 +99,9 @@
         <h1 id="título">Lecturas de Cuarentena</h1>
         <h4 id="subtítulo">Críticas y opiniones</h4>
         
-        <img id= "primera-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Old_book_bindings.jpg/275px-Old_book_bindings.jpg" alt="imagen de libros viejos" width="250px" >
+        <img id= "primera-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Old_book_bindings.jpg/275px-Old_book_bindings.jpg" alt="imagen de libros viejos" width="170px" >
         
-        <img id="segunda-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/300px-Metal_movable_type.jpg" alt="tipografía" height="200px" >
+        <img id="segunda-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/300px-Metal_movable_type.jpg" alt="tipografía" width="170px" >
             
         <div id="índice-lista-mes">
             <h2 id="índice">Índice</h2>
