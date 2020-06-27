@@ -1,189 +1,201 @@
+<!--Pasar a porcentaje los valores de los márgenes, así en celulares mantiene las proporciones -->
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Proyecto: Primera Bitácora</title>
+        <title>Lecturas de Cuarentena</title>
         <style>
-            body {
-                background-color: rgb(87, 255, 199);
-                font-style: italic;
+            body{
+                background-color: rgb(142, 146, 141);
             }
-            table {
-                background-color: rgb(255, 255, 255);
-                color: rgb(0, 180, 245);
-                margin-left: 40%;
-                border: 5px outset blue;
-                padding: 5px; 
-                
-            }
-            h1 {
-                background-color: rgb(0, 0, 0);
-                color: rgb(240, 240, 240);
+            #título, #subtítulo {
+                color:darkslategray;
                 text-align: center;
-                margin: 20px 40% 50px 40%;
-                border: 2px hidden red;
-                padding: 5px;
+                text-decoration: underline;
             }
-            #menu {
-                margin: 50px 250px 0px 250px;
-                border: 5px inset pink;
+            #primera-imagen {
+                float: right;
+                margin: 10% 5% 0% 3%;
+                margin-left: 5%;
                 
+                border: 10px ridge brown;
+                }
+            #segunda-imagen {
+                position:relative;
+                float: right;
+                margin-top: 10%;
+                border: 10px ridge brown;
+            }
+            #índice, #prólogo {
+                color:darkslategray;
+                text-decoration: underline;
                 
             }
-            #info {
-                background-color:rgb(87, 235, 199);
-                margin-top: 50px;
-                border: 4px inset black;
+            #índice-lista-mes {
+                background-color: aliceblue;
+                color:darkslategray;
+                font-size: 1.2em;
+                margin: 4% 63% 0% 2%;
+                border: 5px double orange;
+                padding: 10px;
+                height: 400px;
+                overflow-y: auto;
+            }
+            #índice-lista-mes h3 {
+                text-decoration: underline;
+            }
+            #lecturas-mes-lista {
+                margin-top: 80px;
+                margin-left: 30px;
+                
+            }
+            #bloque-críticas-opiniones {
+                background-color: aliceblue;
+                color:darkslategray;
+                margin-top: 80px;
+                border: 5px double orange;
+                padding: 20px;
+                font-size: 1.3em;
+                line-height: 35px;;
+            }
+            #bloque-críticas-opiniones p {
+                color: rgb(7, 20, 50);
+            }
+            #críticas-y-opiniones {
+                margin-right: 900px;
+                border-top: 5px inset green;
+                border-right: 5px inset green;
+                border-left: 5px inset green;
                 padding: 10px;
             }
-            h3 {
-                color: rgb(0, 149, 194);
+            .crítica-mes {
+                text-decoration: underline;
             }
-            h2 {
-                margin-right: 85%;
-                background-color: rgb(0, 0, 0);
-                color: rgb(240, 240, 240);
+            #preámbulo {
+                line-height: 35px;
+                font-size: 1.2em;
+                font-family: sans-serif;
+                background-color: aliceblue;
+                color: rgb(7, 20, 50);
+                border: 5px double orange;
+                padding: 20px;
             }
-            h6{
-                font-family: monospace;
-                color: rgb(219, 0, 230);
+            .positivo {
+                color: green;
             }
-            p {
-                background-color: floralwhite;
-                color:rgb(0, 140, 245);
-                font-family: cursive;
-                line-height: 1.6em;
-            } 
-            .q {
-                text-align: center;
-            }    
-            
-            .g {
-                text-align: center;
+            .negativo {
+                color: red;
+            }
+            ul, .obras {
+                font-style:italic;
             }
             
-            .i {
-                text-align: center;
-            }
-            #río {
-                border: 5px ridge grey;
-            }
-            #caligrafía {
-                border: 5px groove grey;
-            }
         </style>
-        
-    </head>
+        </head>
     
-    <body>
+        <body>
         
-        <h1>Cris-is Blog</h1>
+        <h1 id="título">Lecturas de Cuarentena</h1>
+        <h4 id="subtítulo">Críticas y opiniones</h4>
         
-    <table> 
-        <thead>
-            <tr>
-                <th>¿Qué hay?</th>
-                <th>Gustos</th>
-                <th>Intereses</th>
-            </tr>
-        </thead>
-        <tbody>
-            
-            <tr>
-                <td>Comienzo</td>
-                <td>Busquemos</td>
-                <td>Veamos</td>
-            </tr>
-            <tr>
-                <td>Sigue</td>
-                <td>Encontremos</td>
-                <td>Común</td>
-            </tr>
-            <tr>
-                <td>Andando</td>
-                <td>Compartamos</td>
-                <td>Raro</td>
-            </tr>
-            <tr>
-                <td><a href="#que-hay">Ir</a></td>
-                <td><a href="#gustos">Ir</a></td>
-                <td><a href="#intereses">Ir</a></td>
-            </tr>
-            
-        </tbody>
-     </table>  
-
-      <!--Aquí comienza el especie de menú -->
-      
-     <div id="menu"> <h3 id="que-hay" class="q">¿Qué hay?</h3>
+        <img id= "primera-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Old_book_bindings.jpg/275px-Old_book_bindings.jpg" alt="imagen de libros viejos" width="250px" >
         
-        <p class="q"> <a href="#first">Todo comienzo</a></p>
-        <p class="q"><a href="#second">Lo que sigue</a></p>
-        <p class="q"><a href="#third">Andando</a></p>
+        <img id="segunda-imagen" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Metal_movable_type.jpg/300px-Metal_movable_type.jpg" alt="tipografía" height="200px" >
             
-    <h3 id="gustos" class="g">Gustos</h3>
+        <div id="índice-lista-mes">
+            <h2 id="índice">Índice</h2>
+            
+            <h3><a href="#prólogo">Prólogo</a></h3>
+            
+            <h3><a href="#lecturas-de-mayo">Lecturas de mayo</a></h3>
+                <ul>
+                    <li><a href="#I">Ida</a></li>
+                    <li><a href="#EA">El africano</a></li>
+                    <li><a href="#LTDLP">La tierra de las papas</a></li>
+                    <li><a href="#P">Plop</a></li>
+                    <li><a href="#S">Sobibor</a></li>
+                    <li><a href="#DRELPDB">De repente en lo profundo del bosque</a></li>
+                    <li><a href="#ECIDPAM">El curioso incidente del perro a medianoche</a></li>
+                    <li><a href="#NAAUPEL">Nunca acaricies a un perro en llamas</a></li>
+                </ul>
         
-        <p class="g"><a href="#buscar">Busquemos</a></p>
-        <p class="g"><a href="#encontrar">Encontremos</a></p>
-        <p class="g"><a href="#compartir">Compartamos</a></p>
-            
-    <h3 id="intereses" class="i">Intereses</h3>
-            
-        <p class="i"><a href="#ver">Veamos</a></p>
-        <p class="i"><a href="#común">Común</a></p>
-        <p class="i"><a href="#raro">Raro</a></p>
+            <h3><a href="#lecturas-de-junio">Lecturas de junio</a></h3>
+                <ul>
+                    <li>Libro</li>
+                    <li>Etc...</li>
+                </ul>
         </div>
-    <!--Y aquí termina ese especie de menú -->
         
-        <div id="info">
+        <div id="lecturas-mes-lista">
             
-        <img id="río" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Parana_atardecer.JPG/250px-Parana_atardecer.JPG" alt="Río Paraná" height="200">
+            
+        </div>
         
-        <!-- Comienza el blog, primera entrada-->
+        <!--La idea es escribir un párrafo acá, a modo de pequeña introducción o explicación de lo que es esto, para no introducirse a las críticas sin preámbulos -->
+            
+        <div id="preámbulo">
         
-        <h2 id="first">Todo comienzo</h2>
-        <h6>Escrito un 29 de febrero de algún año bisiesto</h6>
-        
-        <p>Esto es una simulación de blog. Pero hay una verdadera historia detrás de todo esto. Hace ya un tiempo, tuve el deseo de crear un blog. Pretendía escribir sobre mis variadas lecturas, exponer mis ideas y críticas. De tener suerte alguien iba leerme y así se armaría un pequeño grupo de debate y lecturas conjuntas. <br> A día de hoy, cuando mis intreses me llevaron por otros caminos (aprender a programar, estudiar una tecnicatura en informática), el río, que simboliza la vida, desemboca en el mismo viejo mar. ¡Y qué va, cuando nos ponemos a hacer, sin pensarlo tiramos hacia lugares a los que queremos llegar! </p>
-        <h2 id="second">Lo que sigue</h2>
-        <h6>Cercano al presente, sea cual sea</h6>
-        
-        <p>Tiempos de pandemia mundial. Tiempos de muerte, de agravamiento de antiguas crisis. Tiempos de cambios y reflexiones para otrxs. En este último grupo tengo el privilegio de estar inserto. Nadie sabe qué depara el futuro, pero sí, algunas veces, se sabe qué se desea para él. En mi caso, deseo continuar mis estudios. Aprender a programar cada vez con más soltura y autoridad, siendo capaz de hacer realidad mis proyectos. Tengo como base al lenguaje llamado JavaScript. Queda mucho que aprender sobre dicho lenguaje, mi deseo es volverme ducho en él, para luego pasar a aprender Java, Python o C++. También, por supuesto, aprendo el lenguaje de etiquetas HTML, en conjunto con el estilizador CSS. Espero grandes beneficios de saber programar con estos lenguajes. Tal vez haciéndome bueno en el manejo de ellos logre independizarme y contar, de esta manera, con mis propios ingresos. Así, una vez terminada la tecnicatura, pasar a estudiar una licenciatura en matemática.  </p>
-        
-        <h2 id="third">Andando</h2>
-        <h6>En el presente, mientras lees</h6>
-        
-        <p>Sanar y fortalecerse, conceptos clave. No ignorar las injusticias sobre las que se construyó nuestro presente. Tampoco aquellas que se perpetuan en el ahora. Salir de la burbuja, empatizar. Reconocer los errores, pero no sólo eso, remendarlos en lo posible. Intentar comprender antes de juzgar y gritar lo que el sentido común nos dicta. Escuchar las voces de quienes viven de primera mano ciertas experiencias. Nunca se podrá saber lo que es estar en la piel de le oprimide, violentade, reprimide, pero sí se podrá saber cómo suenan sus vivencias, dándoles lugar para expresarse.</p>
-    
-        
-        
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rubik%27s_cube_almost_solved.svg/250px-Rubik%27s_cube_almost_solved.svg.png" alt="cubo de rubik" width="200">
-        
-    <!-- Comienza la segunda entrada -->
-        
-        <h2 id="buscar">Busquemos</h2>
-        <p>Pueden no gustarnos infinidad de cosas, pero a su vez pueden gustarnos otra infinidad de cosas. Es sencillo, hay que investigar y experimentar. Antes creía que, por ejemplo, el cubo de Rubik no era para mí, que no me gustaba. Pero un día me puse a jugar con él, luego aprendí a armarlo y pronto a amarlo.</p>
-        
-        <h2 id="encontrar">Encontremos</h2>
-        <p>Cuando buscamos no necesariamente encontramos. Hay que apender a encontrar. Esto significa tener buen olfato y saber cuándo se está ante algo potencialmete atracivo para nostros. Después de todo, no hay que perder nuestro propio criterio.</p>
-        
-        
-        <h2 id="compartir">Compartamos</h2>
-        <p>Una vez tenemos un séquito de objetos, asuntos, tópicos, etc. que nos guste, es hora de compartir. A veces para retribuir el favor que nos hicieron antes aquellxs que comparten, otras para aumentar aun más la diversión y lo interesante.</p>
-        
-    <img id="caligrafía" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Japanese_calligraphy.jpg/160px-Japanese_calligraphy.jpg" alt="caligrafía japonesa" width="200">    
-        
+            <h2 id="prólogo">Breve comentario a modo de prólogo</h2>    
+            
+            <p>De este lado de la pantalla se encuentra un sujeto, cuanto menos, curioso. Curioso y persistente. En esta oportunidad tenemos un proyecto que enlaza dos de mis variados intereses/pasatiempos. Si bien no se trata de un blog personal, debo advertir (y admitir) que estos comentarios/críticas son de índole personal. Originalmente escritos para ser leídos sólo por mí, mis estudios de HTML/CSS me llevaron a hacer de este ejercicio íntimo algo público. Esta es la manera que encontré de reunir dos de mis hobbies, leer y programar. Y también la manera de vencer un miedo: el de la exposición. <br>Entiendo que el modo que tengo de expresar mis juicios puede resultar un poco brusco y directo. Pero decidí no atenuarlos y ser lo más auténtico posible. Se ha de tener en cuenta que, después de todo, se trata de nada más que de los comentarios de un joven e irresponsable lector.</p>
+            
+            <p>Nota: decidí asignar un "valor" a cada lectura. La escala de referencia funciona así: "<span class="positivo">+++</span>" representa la excelencia; "<span class="positivo">++</span>" indica una obra considerablemente 'buena'; "<span class="positivo">+</span>" una obra 'buena' sin más; "." quiere decir que mi valoración para la obra en cuestión se encuentra en un limbo entre 'bueno' y 'malo'; "<span class="negativo">-</span>" significa una obra 'mala' sin más; "<span class="negativo">--</span>" indica una obra bastante mala; "<span class="negativo">---</span>" representa lo horrible o que 'peor, imposible'.</p>
+            
+            <p>Otra nota: no hay spoilers.</p>
+            
+        </div>
+            
+            
+        <!-- A partir de acá, simplemente copié lo escrito en Word, las críticas y opiniones que escribo apenas termino de leer el libro en cuestión -->
+            
+        <div id="bloque-críticas-opiniones">
+            <h2 id="críticas-y-opiniones">Críticas y opiniones</h2>
+            
+            <h3 class="crítica-mes"><em id="lecturas-de-mayo">Lecturas de mayo</em></h3>
+            <h3 class="crítica-libro">■<span class="obras" id="I">Ida</span>, Oliverio Coelho. La otra orilla, ed. Norma. (<span class="negativo">---</span>)</h3>
+            <p>Irrelevante, pomposo. Léxico demasiado ornamental para lo vacío que es. Argumento insulso, con, a lo sumo, tres líneas bien logradas. Aunque tiene un mérito: lo recargado de sus líneas no hace de este trabajo una novela de difícil lectura, pudiéndose seguir fácilmente la historia narrada.
+Me dio la primera impresión de que la narración inicial era una superficie, debajo de la cual yacía lo verdadero. Esto me llevó a leer hasta la mitad, momento en que creí que comenzaba la historia, propiamente dicha. Pero sólo me decepcioné, llegando hasta el final con la amarga sensación de haber sido engañado: un argumento pueril, ornamentado hasta el asco. Supongo que esos son los resultados de mucho estudio y poco arte.
+</p>
+            <h3 class="crítica-libro" id="EA">■<span class="obras">El africano</span>, J.M.G. Le Clézio. Ed. Adriana Hidalgo. (<span class="positivo">++</span>)</h3>
+            <!-- Este símbolo ■ es alt+254 -->
+            <p>Formidable ejercicio memorístico. Como un director ducho, Le Clézio, con su batuta-pluma, lleva a ritmo perfecto sus recuerdos de África, sus recuerdos de infancia, los recuerdos de su padre y de su madre, inmiscuido todo en el escenario mundial, que se figura en el fondo, sin detalles, pero claro. No es ficción. Es una muestra de lo que un escritor puede lograr: ser más fiel que la documentación científica detallada a la hora de retratar gran parte de una vida en intersección con tantas otras, como las numerosas vidas de un continente.</p>
+            
+            <h3 class="crítica-libro" id="LTDLP">■<span class="obras">La tierra de las papas</span>, Paloma Bordons. El barco de vapor, ed. SM. (<span class="positivo">+</span>)</h3>
+            <p>
+Para conocer cómo es Bolivia a los ojos de un forastero europeo o europeizado, es necesaria esta lectura. Puesta la narración en boca de una joven adolescente, la escritora se permite juicios y observaciones que un adulto jamás emitiría, a no ser que sea un completo sorete (prefiero usar la palabra “sorete” antes que cretino, imbécil, idiota, mogólico, etcétera). Y esto le agrega un gran valor a la obra. No deja de ser un retrato, y en la inocencia de la cotidianeidad se vislumbra un gran abanico de realidades y problemáticas que atraviesan a la cultura boliviana y que concierne al panorama mundial. <br>Si Paloma, o María, mejor dicho, querían hacer algo Con Mayúscula, esta breve novela es un gran servicio.
+</p>
+            <h3 class="crítica-libro" id="P">■<span class="obras">Plop</span>, Rafael Pinedo. Ed. Interzona. (<span class="positivo">+</span>)</h3>
+            <p>Una adaptación al estilo historieta de esta obra sería algo muy impresionante de leer. Se me escapan varios de los tópicos que maneja la novela, al quedar atrapado en el mundo (nuestro mundo) que el autor describe yendo directamente al grano. Las jerarquías y las dinámicas que rigen a los grupos quedan perfectamente claras sin necesidad de extenderse en explicaciones detalladas. El escenario distópico es muy corriente en la literatura reciente. Sin embargo, Plop se desentiende de los mecanismos típicos. Escrito en un estilo directo, crudo, acertado, dice todo en pocas líneas. <br> 
+Si se tratara, esta obra, de una premonición, entonces estaríamos frente a una obra de terror. Por el momento, hagamos fuerza por que se mantenga en lo que es, ficción.
+</p>
+            <h3 class="crítica-libro" id="S">■<span class="obras">Sobibor</span>, Jean Molla. Ed. Castillo. (<span class="positivo">++</span>)</h3>
+            <p>Literatura seria (no por lo literario, sino por el tópico). Un experimento ficcional de lo que puede ser el después de la vida de una familia que ha enterrado 250.000 personas, luego de exterminarlas. Nuestro pasado nos constituye, me dice la obra, y las consecuencias se pagan con el cuerpo. Aunque la justicia no es divina, ni omnipresente. Hay que impartirla. “El olvido es la única venganza y el único perdón”, por eso, agrego, no hay que olvidar. <br>
+El holocausto es un pozo sin fin. Nunca podrá ser un cliché, porque se extiende universalmente, como el éter de la física del siglo XIX. Dondequiera que un grupo de ejemplares de la raza humana se envilezca y actúe como sus potencias se lo permiten, habrá un posible holocausto. Entonces no resulta extraño que el exterminio no nos extrañe. (XD, XD.) <br>
+Como lectura (todavía soy capaz de percibir el arte, más allá del intrínseco acto político que conlleva cada acción humana) es una novela razonable, bien escrita, con buenos tiempos. El gancho (uppercut) principal se percibe con bastante antelación al desvelamiento, por lo cual no hay factor sorpresa. Imagino deliberadas las numerosas pistas que deja el autor, por lo cual no estimo relevante si el desenlace es sorpresivo o no. Un fuerte y emocionante trabajo de memoria. Un buen ejercicio de novela.
+</p>
+            <h3 class="crítica-libro" id="DRELPDB">■<span class="obras">De repente en lo profundo del bosque</span>, Amos Oz. Ed. Siruela. (<span class="negativo">--</span>)</h3>
+            <p>Aburrido, infantil. Su error principal: no tener en cuenta que el hecho de que una obra sea infantil no significa que esta deba pecar de ingenuidad y felicidad de brillantina. Terriblemente lento, parece que nunca fuera a suceder algo. Y cuando ese algo sucede, además de que ya es tarde, no se desarrolla nada memorable.
+<br> La ficción es un arte, que se noten los hilos es una irresponsabilidad artística. La narración tiene un ritmo: no es saludable para una obra ralentizar y repetir. El ámbito en el cual menos tolerancia hay para lo inverosímil es en la literatura infantil; luego, en la fantástica. 
+</p>
+            <h3 class="crítica-libro" id="ECIDPAM">■<span class="obras">El curioso incidente del perro a medianoche</span>, Mark Haddon. Trad. Patricia Antón, formato PDF. (<span class="positivo">+</span>)</h3>
+            <p>El impacto de esta lectura en una versión siete años más joven de mí me habría dejado habitando una existencia ajena por largos días. Incluso hoy su impacto es considerable (en cuanto a mi persona), y en el transcurso de la lectura (la noche de ayer, lunes 25 de mayo y la tarde de hoy, martes 26 de mayo) no pude evitar comportarme un poco extraño. <br> 
+Puede gustarle a alguien con morbos sobre el espectro autista, o un familiar, o un mismo autista, o un profesional, o alguien con gusto por las matemáticas. Que así fue como me topé con esta lectura: un panfleto del plan educacional del gobierno de Cristina lo recomendaba (2008), en una propuesta de interrelacionar la lectura literaria con la matemática. <br>
+Desconozco todo sobre el autor, pero, si no es autobiográfico o basado en una forma personal de vivir, tuvo que serle un arduo ejercicio ponerse tras la mirada de un chico Asperger y hacerlo tan bien. A momentos parece exagerado, es cierto, pero no termina de pasarse de la línea. Y antes de pensar en una posible caricatura del tipo Asperger, se debe considerar que hay distintos grados y muy dispares. 
+<br>Literariamente no parece tener mucho valor, una historia simple, en la que el fuerte está en el contenido y no en su forma (aunque la forma es una pincelada bien intencionada). Al tratarse de una traducción (que desconozco si es autorizada siquiera) no puedo sacar una conclusión sobre el estilo y la calidad del autor. Aun así, es una novela que se abre paso por sí misma, de fácil lectura y en algunos pequeños puntos, tal vez, un poco conmovedora. Muchas de las ideas que circulan en la obra son parte de un estereotipo. Siendo rigurosos, no se puede afirmar que esta obra represente al colectivo Asperger, es, pura y llanamente, ficción (o experiencia personal y particular, de tratarse de una inspiración en casos reales). (Si no, léase la parte donde se cuenta el chiste de las ovejas en Irlanda, y los papeles del economista, el lógico y el matemático (?).)
+</p>
+            <h3 class="crítica-libro" id="NAAUPEL">■<span class="obras">Nunca acaricies a un perro en llamas</span>, Alberto Gallo. Ed. Norma. La otra orilla. (<span class="negativo">-</span>)</h3>
+            <p>Un experimento. Es como ver una película con escenas sin conexión, de tiempo y narrativa densos. Un hilo, precedido de una aguja, une los retazos de cartón baboso. Esto quiere decir que se sigue una historia, y que la sensación inicial de estar leyendo algo sin pies ni cabeza disminuye hasta desaparecer. Aun así, estos escritores rioplatenses (este es uruguayo, Oliverio Coelho es argentino) se empeñan en jugárselas para teñir sus obras con una tinta erótica. (En el caso del argentino, un detalle anecdótico en su pésima novela, en el caso del uruguayo- además de agregarle un factor potencialmente negativo y asqueroso-, una desatinada decisión que mancilla un poco su casi mediocre obra. Aunque, muy probablemente, no lo pudo evitar y está orgulloso de ello.) <br>
+Escritura poco ortodoxa, que ya en estos días aburre. Con pequeños detalles que logran bonitos momentos digamos que casi vale la pena leer esta novela. 
+</p>
            
-    <!-- Comienza la tercera entrada -->
+            
+            <h3 class="crítica-mes"><em id="lecturas-de-junio">Lecturas de junio</em></h3>
+            <h3 class="crítica-libro">■Junio va lento, veré si termino antes del 30 lo que estoy leyendo</h3>
+            <h3 class="crítica-libro">■Crítica de tal libro</h3>
+        </div>  
         
-        <h2 id="ver">Veamos</h2>
-        <p>Hay distintos tipos de intereses. Están aquellos intereses de los que nos hablan los banqueros. También los intereses de las cosas que nos interesan. En este momento ya me quedé sin nada que escribir, esto es relleno.</p>
         
-        <h2 id="común">Común</h2>
-        <p>No hay que negar si lo que nos parece interesante es común. Lo común sirve para caer bien a la gente. Tener cosas en común con otra persona te hace ganarte su simpatía. Podés conocer algo por arriba para utilizar ese conocimiento superficial en situaciones que lo requieran. Finge que eres humano, John von Neumann, o te descubrirán.</p>
-        
-        <h2 id="raro">Raro</h2>
-        <p>Lo que es raro lo es para quienes no comparten el gusto por eso "raro" y no lo es para quienes sí. No te podría decir que el gusto por programar es raro, porque de seguro no te lo parece. Pero salís al mundo, y encontrás que sí es raro. Que las matemáticas no son rara, pero grita que te gustan como quien gritaría que le gusta el fútbol, y ya serás el nerd rarito. Es absurdo, pero así es. Nuestro deber es cambiarlo un poco, en lo posible. Le hará muy a la gente, en más de un sentido.</p>
-        </div>
-    </body>
+            
+        </body>
 </html>
