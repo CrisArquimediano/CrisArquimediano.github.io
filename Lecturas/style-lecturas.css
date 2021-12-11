@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(142, 146, 141);
+}
+#título, #subtítulo {
+    color:darkslategray;
+    text-align: center;
+    text-decoration: underline;
+}
+#primera-imagen {
+    float: right;
+    margin: 10% 5% 0% 3%;
+    margin-left: 5%;
+    
+    border: 10px ridge brown;
+    }
+#segunda-imagen {
+    position:relative;
+    float: right;
+    margin-top: 10%;
+    border: 10px ridge brown;
+}
+#índice, #prólogo {
+    color:darkslategray;
+    text-decoration: underline;
+    
+}
+#índice-lista-mes {
+    background-color: aliceblue;
+    color:darkslategray;
+    font-size: 1.2em;
+    margin: 4% 63% 0% 2%;
+    border: 5px double orange;
+    padding: 10px;
+    height: 400px;
+    overflow-y: auto;
+}
+#índice-lista-mes h3 {
+    text-decoration: underline;
+}
+#lecturas-mes-lista {
+    margin-top: 80px;
+    margin-left: 30px;
+    
+}
+#bloque-críticas-opiniones {
+    background-color: aliceblue;
+    color:darkslategray;
+    margin-top: 80px;
+    border: 5px double orange;
+    padding: 20px;
+    font-size: 1.3em;
+    line-height: 35px;;
+}
+#bloque-críticas-opiniones p {
+    color: rgb(7, 20, 50);
+}
+#críticas-y-opiniones {
+    margin-right: 900px;
+    border-top: 5px inset green;
+    border-right: 5px inset green;
+    border-left: 5px inset green;
+    padding: 10px;
+}
+.crítica-mes {
+    text-decoration: underline;
+}
+#preámbulo {
+    line-height: 35px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    background-color: aliceblue;
+    color: rgb(7, 20, 50);
+    border: 5px double orange;
+    padding: 20px;
+}
+.positivo {
+    color: green;
+}
+.negativo {
+    color: red;
+}
+ul, .obras {
+    font-style:italic;
+}
+            

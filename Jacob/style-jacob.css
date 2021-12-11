@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+* {
+    box-sizing: border-box;
+    color: #777;
+    
+    font-family: 'Crimson Pro' serif;
+}
+
+A {
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: rgba(0, 0, 0, .3);
+    background-image: url(Logos/backgroundRainbow.jpg);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 20px;
+}
+
+.nav ul {
+    margin: 0px;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    padding: .5em;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    
+}
+
+.main-nav li{
+    padding: 0 5%; 
+}
+
+.artist-name {
+    text-align: center;
+    padding: 0;
+    font-size: 4em;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: white;
+}
+.artist-name-large {
+    color: rgb(146, 175, 41);
+    font-size: 7em;
+}
+
+.selection-header{
+    font-family: 'Crimson Pro', cursive;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    line-height: 30px;
+}
+
+#biography-jacob-image {
+    float: left;
+    width: 200px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 15px;
+    
+}
+.main-footer {
+    background-color: rgb(46, 128, 182);
+    color: black;
+    padding: .12em;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav img {
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color:(0,0,0, .2);
+    background-image: url(fondo-shubham-dhage.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 1em;
+    
+}
+
+.titulo {
+    text-align: center;
+    color: rgb(173, 173, 172);
+    font-family: 'Oswald';
+    font-size: 4em;
+    font-weight: lighter;
+}
+
+.opcion-cif {
+    float: left;
+    font-family: monospace;
+    font-weight: lighter;
+    padding-right: 10%;
+}
+
+.left {
+    /*float: left;*/
+    margin: 1.25em 0em 1em 0em;
+    border: 0.25em double  rgb(12, 12, 1);
+    padding-right: 8em;
+}
+
+.rigth {
+    position: relative;
+    left: 18%;
+    margin: 1em 18% 1em 1em;
+    border: 0.2em double  rgb(12, 12, 1);
+    padding-right: 40%;
+    padding-bottom: 15em;
+}
+.msj {
+    float: left;
+    position: absolute;
+    left: 0.2em;
+    padding-right: 10em;
+    font-family: monospace;
+}
+
+.res {
+    font-family: monospace;
+}
+
+.output {
+    border: 0.2em double  rgb(12, 12, 1);
+    padding-bottom: 15em;
+}
