@@ -4,11 +4,15 @@
         <meta charset="utf-8">
         <meta name="description" content="Implementación Web de cifrado césar-">
         <link rel="stylesheet" href="">
+        <script src="cifrado.js"></script> 
         <title>Cifrado César</title>
     </head>
 
     <body>
         <header>
+            <nav class="links">
+                <h3><a href="../index.html">Inicio</a></h3>
+            </nav>
             <h1 class="titulo">Cifrado César</h1>
         </header>
         
@@ -18,32 +22,28 @@
         <section class="opcion-cif input">
             <div class="left">
                 <label for="clave">Clave:</label>
-                <input type="number" id="clave-input" name="clave">
+                <input type="number" id="clave" name="clave" min="-100" max="100">
                 <br><br>
-                <label for="opcion">Opción:</label>
-                <input type="numer" id="opcion" name="opcion"
-                placeholder="codificar->1, decodificar->0">
-                <br><br>
+                <label for="opcion">Opción (1 para codificar, 0 para decodificar):</label>
+                <input type="number" id="opcion" name="opcion" min="0" max="1">
+                <br><br><br>
                         
             </div>
         </section>
 
         <section class="input">
             <div class="rigth">
-                <h2>Mensaje:</h2>
-                <!--Revisar esto, porque quizás conviene modificar label con CSS-->
-                <textarea rows="5" cols="80" id="msj-usuario" name="mensaje">
-                    Ingrese el texto que para codificar/decodificar...</textarea>
+                <label for="mensaje">Mensaje:</label>
+                <input type="text" id="mensaje" name="mensaje">
+                <br><br>
             </div>
         </section>
 
         <br>
 
         <section>
-            <h2 class="res">Resultado</h2>
-            <textarea rows="5" cols="80"></textarea>
-            <div class="output"></div>
-    
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" name="resultado">    
             <br>
         </section>
         
