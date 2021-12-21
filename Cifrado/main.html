@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="Implementación Web de cifrado césar-">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
         <script src="cifrado.js"></script> 
         <title>Cifrado César</title>
     </head>
@@ -16,43 +16,29 @@
             <h1 class="titulo">Cifrado César</h1>
         </header>
         
-            
         <br>
 
-        <section class="opcion-cif input">
-            <div class="left">
-                <label for="clave">Clave:</label>
+        <form class="form">
+            <section class="opcion-clave input">
                 <input type="number" id="clave" name="clave" min="-100" max="100">
+                <label for="clave">Clave</label>
                 <br><br>
-                <label for="opcion">Opción (1 para codificar, 0 para decodificar):</label>
                 <input type="number" id="opcion" name="opcion" min="0" max="1">
+                <label for="opcion">Opción (1 para codificar, 0 para decodificar)</label>
                 <br><br><br>
-                        
-            </div>
-        </section>
+            </section>
 
-        <section class="input">
-            <div class="rigth">
-                <label for="mensaje">Mensaje:</label>
+            <section class="msj">
+                <label for="mensaje" class="nombre">Mensaje:</label>
+                <br>
+                <!--Hay que darle un límite al texto, para que haga nuevas líneas-->
                 <input type="text" id="mensaje" name="mensaje">
                 <br><br>
-            </div>
-        </section>
-
-        <br>
-
-        <section>
-            <label for="resultado">Resultado:</label>
-            <input type="text" id="resultado" name="resultado">    
-            <br>
-        </section>
-        
+                <label for="resultado" class="nombre">Resultado:</label>
+                <br>
+                <input type="text" id="resultado" name="resultado">    
+            </section>
+        </form>
     </body>
-
-
-
-
-
-
 
 </html>
