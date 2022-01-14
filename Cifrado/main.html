@@ -20,27 +20,32 @@
 
         <form class="form">
             <section class="opcion-clave input">
-                <input type="number" id="clave" name="clave" min="-100" max="100">
+                <input type="number" id="clave" name="clave" min="-100" max="100" required>
                 <label for="clave">Clave</label>
                 <br><br>
-                <input type="number" id="opcion" name="opcion" min="0" max="1">
-                <label for="opcion">Opción (1 para codificar, 0 para decodificar)</label>
+                
+                <label for="opcion">Codificar</label>
+                <input type="radio" name="opcion" id="codificar" required value="codificar">
+                <label for="opcion">Decodificar</label>
+                <input type="radio" name="opcion" id="decodificar" required value="decodifcar">
                 <br><br><br>
             </section>
 
             <section class="msj">
-                <h3 class="subtitulo">Mensaje:</h3>
-                <!--Hay que darle un límite al texto, para que haga nuevas líneas-->
+                <div>
+                    <h3 class="subtitulo">Mensaje:</h3>
+                   
+                    <textarea class="mensaje" name="entrada" rows="15" cols="70" required></textarea>
+                    <br><br>
+                </div>
+                
+                <button type="submit">Cifrar/Descifrar</button>
+                <button type="reset">Borrar todo</button>
 
-                    <!--
-                    <textarea id="story" name="story"
-                        rows="5" cols="33">
-                        It was a dark and stormy night...
-                    </textarea>-->
-                <textarea class="mensaje" name="entrada" rows="15" cols="70"></textarea>
-                <br><br>
-                <h3 class="subtitulo">Resultado:</h3>
-                <textarea class="resultado" name="entrada" rows="15" cols="70"></textarea>    
+                <div>
+                    <h3 class="subtitulo">Resultado:</h3>
+                    <textarea class="resultado" name="salida" rows="15" cols="70"></textarea>    
+                </div>
             </section>
         </form>
     </body>
