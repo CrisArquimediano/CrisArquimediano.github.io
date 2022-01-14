@@ -11,7 +11,7 @@
     <body>
         <header>
             <nav class="links">
-                <h3><a href="../index.html">Inicio</a></h3>
+                <h3><a class="link" href="../index.html">Inicio</a></h3>
             </nav>
             <h1 class="titulo">Cifrado César</h1>
         </header>
@@ -29,14 +29,18 @@
             </section>
 
             <section class="msj">
-                <label for="mensaje" class="nombre">Mensaje:</label>
-                <br>
+                <h3 class="subtitulo">Mensaje:</h3>
                 <!--Hay que darle un límite al texto, para que haga nuevas líneas-->
-                <input type="text" id="mensaje" name="mensaje">
+
+                    <!--
+                    <textarea id="story" name="story"
+                        rows="5" cols="33">
+                        It was a dark and stormy night...
+                    </textarea>-->
+                <textarea class="mensaje" name="entrada" rows="15" cols="70"></textarea>
                 <br><br>
-                <label for="resultado" class="nombre">Resultado:</label>
-                <br>
-                <input type="text" id="resultado" name="resultado">    
+                <h3 class="subtitulo">Resultado:</h3>
+                <textarea class="resultado" name="entrada" rows="15" cols="70"></textarea>    
             </section>
         </form>
     </body>

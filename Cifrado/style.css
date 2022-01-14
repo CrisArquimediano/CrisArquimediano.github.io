@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     background-color:(0,0,0, .2);
     background-image: url(fondo-shubham-dhage.jpg);
@@ -33,11 +37,15 @@ header {
     float: left;
 }
 
-.msj input {
+/*.msj input {
     height: 20em;
     width: 30em;
     padding-bottom: 20.5em;
     margin-bottom: 1.5em;
+}*/
+
+.link {
+    color: white;
 }
 
 

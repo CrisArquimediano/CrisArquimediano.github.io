@@ -1,1 +1,1 @@
-//alert("domo");
+alert("¡Encantado! Gracias por ver mi perfil. Simplicidad para un mensaje simple: I'm the talent you're looking for.");
