@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="description" content="Implementación Web de cifrado césar-">
         <link rel="stylesheet" href="style.css">
-        <script src="cifrado.js"></script> 
+        <script src="cifrado.js" defer></script> 
         <title>Cifrado César</title>
     </head>
 
@@ -35,16 +35,16 @@
                 <div>
                     <h3 class="subtitulo">Mensaje:</h3>
                    
-                    <textarea class="mensaje" name="entrada" rows="15" cols="70" required></textarea>
+                    <textarea id="mensaje" name="entrada" rows="15" cols="70" required></textarea>
                     <br><br>
                 </div>
                 
-                <button type="submit">Cifrar/Descifrar</button>
+                <button type="button" id="submit">Cifrar/Descifrar</button>
                 <button type="reset">Borrar todo</button>
 
                 <div>
                     <h3 class="subtitulo">Resultado:</h3>
-                    <textarea class="resultado" name="salida" rows="15" cols="70"></textarea>    
+                    <textarea id="resultado" name="salida" rows="15" cols="70"></textarea>    
                 </div>
             </section>
         </form>
