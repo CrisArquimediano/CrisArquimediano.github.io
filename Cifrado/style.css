@@ -27,6 +27,7 @@ header {
 }
 
 .form {
+    position: absolute;
     float: left;
     font-family: monospace;
     font-weight: lighter;
@@ -46,6 +47,12 @@ header {
 
 .link {
     color: white;
+}
+
+
+.info-link {
+    color:orange;
+    text-decoration: underline;
 }
 
 

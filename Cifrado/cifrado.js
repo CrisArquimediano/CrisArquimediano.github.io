@@ -1,70 +1,63 @@
+/*Código duplicado, en los métodos onCifrar y onDescifrar, arreglar esto*/
 
 const clave = document.getElementById('clave').innerHTML
-
-
-const cifrar = document.getElementById('submit')
+const cifrar = document.getElementById('cifrar')
+const descifrar = document.getElementById('descifrar')
 const resultado = document.getElementById('resultado')
 
+
 var onCifrar = function(){
-    const msj = document.getElementById('mensaje').value
+    const mensaje = document.getElementById('mensaje').value
+    const msj = mensaje.toLowerCase()
     const clave = parseInt(document.getElementById('clave').value)
+ 
     let msjCodificado = "" 
 
-   for(var i = 0; i < msj.length; i++){
+    for(var i = 0; i < msj.length; i++){
         let letraAscii = msj.charAt(i).charCodeAt(0)
 
-        while(clave > 25){
-            clave = clave - 25
-        }
-
-        if(noEsLetra(letraAscii)){
+        if(letraAscii < 97 || letraAscii > 122){
             msjCodificado += String.fromCharCode(letraAscii)
         }
         else {
             let charCodificado = letraAscii + clave
             
-            if(noEsLetra(charCodificado)){
-                if(letraAscii > 64 && letraAscii < 91){
-                    if(charCodificado > 90){
-                        charCodificado = charCodificado - 26
-                    }
-                    else {
-                        charCodificado = charCodificado + 26
-                    }
-                }
-                else{
-                    if(charCodificado > 122){
-                        charCodificado = charCodificado - 26
-                    }
-                    else {
-                        charCodificado = charCodificado + 26
-                    } 
-                }
+            if(charCodificado > 122){
+                charCodificado = charCodificado - 26
+            }
+            msjCodificado += String.fromCharCode(charCodificado)
+        }              
+    }        
+    resultado.innerText = msjCodificado  
+}
+
+var onDescifrar = function(){
+    const mensaje = document.getElementById('mensaje').value
+    const msj = mensaje.toLowerCase()
+    const clave = parseInt(document.getElementById('clave').value)
+ 
+    let msjCodificado = "" 
+    
+    for(var i = 0; i < msj.length; i++){
+        let letraAscii = msj.charAt(i).charCodeAt(0)
+
+        if(letraAscii < 97 || letraAscii > 122){
+            msjCodificado += String.fromCharCode(letraAscii)
+        }
+        else {
+            let charCodificado = letraAscii - clave
+               
+            if(charCodificado < 97){
+                charCodificado = charCodificado + 26
             }
             msjCodificado += String.fromCharCode(charCodificado)            
-        }
-
-        
+        } 
     }
     resultado.innerText = msjCodificado
-
 }
-
-var noEsLetra = function(caracter){
-    return (caracter < 65 || caracter > 122) || (caracter > 90 && caracter < 97)
-}
-
 
 cifrar.addEventListener('click', onCifrar)
-
-
-
-
-
-
-
-
-
+descifrar.addEventListener('click', onDescifrar)
 
 
 

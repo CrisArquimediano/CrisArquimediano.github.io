@@ -14,21 +14,19 @@
                 <h3><a class="link" href="../index.html">Inicio</a></h3>
             </nav>
             <h1 class="titulo">Cifrado César</h1>
+            <h3><a class="info-link" href="info.html">¿Qué es el cifrado César?</a></h3>
         </header>
         
         <br>
 
         <form class="form">
             <section class="opcion-clave input">
-                <input type="number" id="clave" name="clave" min="-100" max="100" required>
+                <input type="number" id="clave" name="clave" min="0" max="25" required>
                 <label for="clave">Clave</label>
-                <br><br>
-                
-                <label for="opcion">Codificar</label>
-                <input type="radio" name="opcion" id="codificar" required value="codificar">
-                <label for="opcion">Decodificar</label>
-                <input type="radio" name="opcion" id="decodificar" required value="decodifcar">
-                <br><br><br>
+                <p>El valor mínimo de la clave es 0 y el máximo es 25. Notar que cualquier clave menor a 0
+                    o mayor a 25 ya está cubierta en el intervalo [0, 25].
+                </p>
+                <br>
             </section>
 
             <section class="msj">
@@ -39,8 +37,9 @@
                     <br><br>
                 </div>
                 
-                <button type="button" id="submit">Cifrar/Descifrar</button>
-                <button type="reset">Borrar todo</button>
+                <button type="button" id="cifrar">Cifrar</button>
+                <button type="button" id="descifrar">Descifrar</button>
+                <button type="reset">Borrar</button>
 
                 <div>
                     <h3 class="subtitulo">Resultado:</h3>
@@ -48,6 +47,8 @@
                 </div>
             </section>
         </form>
+        
+        
     </body>
 
 </html>
