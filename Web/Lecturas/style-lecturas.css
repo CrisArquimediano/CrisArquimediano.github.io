@@ -4,7 +4,7 @@ body{
 #título, #subtítulo {
     color:darkslategray;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
 }
 #primera-imagen {
     float: right;
@@ -21,7 +21,7 @@ body{
 }
 #índice, #prólogo {
     color:darkslategray;
-    text-decoration: underline;
+    text-decoration: none;
     
 }
 #índice-lista-mes {
@@ -35,7 +35,7 @@ body{
     overflow-y: auto;
 }
 #índice-lista-mes h3 {
-    text-decoration: underline;
+    text-decoration: none;
 }
 #lecturas-mes-lista {
     margin-top: 80px;
@@ -55,7 +55,7 @@ body{
     color: rgb(7, 20, 50);
 }
 #críticas-y-opiniones {
-    margin-right: 900px;
+    margin-right: 700px;
     border-top: 5px inset green;
     border-right: 5px inset green;
     border-left: 5px inset green;
